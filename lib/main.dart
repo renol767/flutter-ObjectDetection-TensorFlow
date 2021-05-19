@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:tensorflow_objectdetection/ui/home.dart';
 import 'package:tensorflow_objectdetection/ui/home_view.dart';
+import 'package:tensorflow_objectdetection/ui/splashscree.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Home(),
+      home: SplashScreen(),
     );
   }
 }

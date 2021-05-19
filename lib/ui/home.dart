@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tensorflow_objectdetection/image_classification.dart/homepage.dart';
 import 'package:tensorflow_objectdetection/ui/home_view.dart';
+import 'package:tensorflow_objectdetection/ui/how_to_use.dart';
 
 class Home extends StatefulWidget {
   Home({Key key}) : super(key: key);
@@ -14,9 +15,6 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text("Object Detection TensorFlow"),
-      ),
       body: SingleChildScrollView(
         child: Container(
           padding: EdgeInsets.all(16.0),
@@ -24,8 +22,10 @@ class _HomeState extends State<Home> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.network(
-                  "https://miro.medium.com/max/788/1*wwYKrV6JR7mBLFCGW-Gj8w.png"),
+              SizedBox(
+                height: 80,
+              ),
+              Image.asset("assets/menu.png"),
               SizedBox(
                 height: 20,
               ),
@@ -96,7 +96,7 @@ class _HomeState extends State<Home> {
                   height: 50,
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => HomeView()));
+                        MaterialPageRoute(builder: (context) => HowToUse()));
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,

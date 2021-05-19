@@ -64,8 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('TfLite Flutter Helper',
-            style: TextStyle(color: Colors.white)),
+        title:
+            Text('Image Classification', style: TextStyle(color: Colors.white)),
       ),
       body: ListView(children: [
         Column(
