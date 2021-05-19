@@ -33,7 +33,9 @@ dependencies:
   tflite_flutter_helper: ^0.1.2
   image: ^2.1.12
   path_provider: ^1.6.11
-  image_picker: ^0.6.7+2
+  image_picker: ^0.7.4
+  collection: ^1.15.0
+  logger: ^1.0.0
 
 dev_dependencies:
   flutter_test:

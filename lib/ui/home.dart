@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tensorflow_objectdetection/image_classification.dart/homepage.dart';
 import 'package:tensorflow_objectdetection/ui/home_view.dart';
 
 class Home extends StatefulWidget {
@@ -24,7 +25,7 @@ class _HomeState extends State<Home> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.network(
-                  "https://miro.medium.com/max/968/1*xZz4EG0cah2uD7gP8IbRBQ.png"),
+                  "https://miro.medium.com/max/788/1*wwYKrV6JR7mBLFCGW-Gj8w.png"),
               SizedBox(
                 height: 20,
               ),
@@ -69,7 +70,7 @@ class _HomeState extends State<Home> {
                   height: 50,
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => HomeView()));
+                        MaterialPageRoute(builder: (context) => MyHomePage()));
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
