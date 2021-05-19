@@ -25,18 +25,88 @@ class _HomeState extends State<Home> {
             children: [
               Image.network(
                   "https://miro.medium.com/max/968/1*xZz4EG0cah2uD7gP8IbRBQ.png"),
+              SizedBox(
+                height: 20,
+              ),
               Text(
                 "Menu",
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 20,
               ),
               FlatButton(
+                  color: Colors.blue,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  height: 50,
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => HomeView()));
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [Icon(Icons.timer), Text("Real Time Detection")],
+                    children: [
+                      Icon(
+                        Icons.timer,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        " Real Time Detection",
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
+                  )),
+              SizedBox(
+                height: 20,
+              ),
+              FlatButton(
+                  color: Colors.blue,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  height: 50,
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => HomeView()));
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.photo,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        "  Image Classification",
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
+                  )),
+              SizedBox(
+                height: 20,
+              ),
+              FlatButton(
+                  color: Colors.blue,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  height: 50,
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => HomeView()));
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.info,
+                        color: Colors.white,
+                      ),
+                      Text("  How To Use",
+                          style: TextStyle(color: Colors.white))
+                    ],
                   ))
             ],
           ),
