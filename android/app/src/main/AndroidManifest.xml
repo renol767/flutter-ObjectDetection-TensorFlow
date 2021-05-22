@@ -1,8 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tensorflow_objectdetection">
+    package="com.objectdetection.tensorflow.ppb">
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="tensorflow_objectdetection"
+        android:label="Object Detection TensorFlow Relase"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

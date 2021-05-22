@@ -1,4 +1,4 @@
-package com.example.tensorflow_objectdetection
+package com.objectdetection.tensorflow.ppb
 
 import io.flutter.embedding.android.FlutterActivity
 
