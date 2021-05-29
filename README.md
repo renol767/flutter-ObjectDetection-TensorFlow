@@ -6,8 +6,10 @@ Aplikasi Flutter menggunakan Library TensorFLow
 
 ### Real Time Detection
 Deteksi Gambar menggunakan Camera dan Deteksi nya RealTime
+
 ![](assets/RealtimeDetection.jpeg)
 
 ### Image Classification
-Deteksi Gambar dari Galery                                 
+Deteksi Gambar dari Galery
+
 ![](assets/ImageClassification.jpeg)
